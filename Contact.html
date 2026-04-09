@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SylphSong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- CHECKOUT MODAL -->
+<div class="checkout-modal" id="checkoutModal">
+  <div class="checkout-content">
+    <button class="checkout-close" id="checkoutClose">×</button>
+
+    <h2>Checkout</h2>
+
+    <!-- CUSTOMER INFO -->
+    <div class="checkout-form">
+      <input type="text" id="custName" placeholder="Full Name" required />
+      <input type="text" id="custPhone" placeholder="Phone Number" required />
+      <input type="text" id="custCity" placeholder="City" required />
+      <input type="text" id="custAddress" placeholder="Address" required />
+    </div>
+
+    <!-- PAYMENT METHODS -->
+    <div class="payment-methods">
+      <h3>Select Payment Method</h3>
+
+      <div class="payment-option active" data-method="cod">
+        💵 Cash on Delivery
+      </div>
+
+      <div class="payment-option" data-method="card">
+        💳 Debit Card
+      </div>
+
+      <div class="payment-option" data-method="paypal">
+        🅿️ PayPal
+      </div>
+
+      <div class="payment-option" data-method="whatsapp">
+        📱 Checkout via WhatsApp
+      </div>
+    </div>
+
+    <button class="btn btn-dark checkout-confirm" id="confirmOrder">
+      Confirm Order
+    </button>
+  </div>
+</div>
+<body>
+  <div class="announcement-bar">Contact SylphSong for orders, support, or fragrance questions.</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+    <a href="index.html" class="logo">
+  <span class="logo-en">SylphSong</span>
+  <span class="logo-tagline">Where myth becomes scent</span>
+</a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="cartToggle" aria-label="Open cart">
+          🛒 <span id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="legal.html">Legal</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero small-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Contact SylphSong</p>
+        <h1>Reach us quickly and clearly.</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-card reveal">
+          <h2>Send a Message</h2>
+          <form class="contact-form">
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your email" />
+            <textarea rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+          </form>
+          <p class="form-note"></p>
+        </div>
+
+        <div class="contact-card reveal delay-1">
+          <h2>Contact Details</h2>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/212776130958" target="_blank">+212776130958</a></p>
+          <p><strong>Instagram:</strong> <a href="#" target="_blank">@sylphsong.1</a></p>
+          <p><strong>TikTok:</strong> <a href="#" target="_blank">@sylphsong</a></p>
+          <p><strong>Email:</strong> <a href="mailto:contact@sylphsong.com">contact@sylphsong.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>SylphSong</h3><p>Where myth becomes scent.</p></div>
+      <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+      <div><h4>Support</h4><a href="contact.html">WhatsApp</a><a href="legal.html">Delivery Policy</a><a href="legal.html">Terms & Conditions</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 SylphSong. All rights reserved.</div>
+  </footer>
+
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cartClose" class="cart-close">×</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <p><strong>Total:</strong> <span id="cartTotal">0</span> DH</p>
+      <p class="promo-note">Promo bundles apply automatically for quantities of 2 on the same bottle size.</p>
+      <button class="btn btn-dark">Checkout</button>
+    </div>
+  </aside>
+
+  <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chatbot">✦</button>
+  <aside class="chatbot-panel" id="chatbotPanel" aria-hidden="true">
+    <div class="chatbot-header">
+      <div><strong>SylphSong Assistant</strong><p>Ask about perfumes, pricing, delivery, or support.</p></div>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Close chatbot">×</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot">Hello, welcome to SylphSong. How can I help you today?</div>
+      <div class="quick-actions">
+        <button data-prompt="Help me choose a fragrance.">Choose a perfume</button>
+        <button data-prompt="What are your promo prices?">Promo prices</button>
+        <button data-prompt="I want delivery information.">Delivery info</button>
+      </div>
+    </div>
+    <form class="chatbot-form" id="chatbotForm">
+      <input type="text" id="chatbotInput" placeholder="Type your message..." />
+      <button type="submit">Send</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

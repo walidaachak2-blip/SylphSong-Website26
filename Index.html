@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SylphSong | Where myth becomes scent</title>
+  <meta name="description" content="SylphSong is a myth-inspired fragrance brand where elegance, story, and scent meet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- CHECKOUT MODAL -->
+<div class="checkout-modal" id="checkoutModal">
+  <div class="checkout-content">
+    <button class="checkout-close" id="checkoutClose">×</button>
+
+    <h2>Checkout</h2>
+
+    <!-- CUSTOMER INFO -->
+    <div class="checkout-form">
+      <input type="text" id="custName" placeholder="Full Name" required />
+      <input type="text" id="custPhone" placeholder="Phone Number" required />
+      <input type="text" id="custCity" placeholder="City" required />
+      <input type="text" id="custAddress" placeholder="Address" required />
+    </div>
+
+    <!-- PAYMENT METHODS -->
+    <div class="payment-methods">
+      <h3>Select Payment Method</h3>
+
+      <div class="payment-option active" data-method="cod">
+        💵 Cash on Delivery
+      </div>
+
+      <div class="payment-option" data-method="card">
+        💳 Debit Card
+      </div>
+
+      <div class="payment-option" data-method="paypal">
+        🅿️ PayPal
+      </div>
+
+      <div class="payment-option" data-method="whatsapp">
+        📱 Checkout via WhatsApp
+      </div>
+    </div>
+
+    <button class="btn btn-dark checkout-confirm" id="confirmOrder">
+      Confirm Order
+    </button>
+  </div>
+</div>
+<body>
+  <div class="announcement-bar">
+    Pantheon Of Scent now available — promo prices live now.
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+     <a href="index.html" class="logo">
+  <span class="logo-en">SylphSong</span>
+  <span class="logo-tagline">Where myth becomes scent</span>
+</a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="cartToggle" aria-label="Open cart">
+          🛒 <span id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="legal.html">Legal</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Myth-Inspired Fragrances</p>
+          <h1>SylphSong</h1>
+          <p class="hero-slogan">Where myth becomes scent</p>
+          <p class="hero-text">
+            SylphSong is a fragrance brand inspired by mythology, timeless elegance, and divine identity.
+            Discover <strong>Pantheon Of Scent</strong>, a collection where each perfume carries the aura of a legend.
+          </p>
+          <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-light">Shop Now</a>
+            <a href="about.html" class="btn btn-outline">Discover the Brand</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <!-- PUT YOUR MAIN HERO IMAGE HERE -->
+          <img src="images/hero-main.jpg" alt="SylphSong hero image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-strip">
+      <div class="marquee-track">
+        <span>Where myth becomes scent</span>
+        <span>Pantheon Of Scent</span>
+        <span>Myth-inspired luxury</span>
+        <span>Divine fragrance identity</span>
+        <span>Where myth becomes scent</span>
+        <span>Pantheon Of Scent</span>
+        <span>Myth-inspired luxury</span>
+        <span>Divine fragrance identity</span>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pantheon Of Scent</p>
+          <h2>A divine collection inspired by the gods and goddesses of myth.</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <!-- PUT APOLLO PHOTO HERE -->
+            <img src="images/apollo.jpg" alt="Apollo perfume image" />
+            <div class="product-body">
+              <p class="product-tag">Pantheon Of Scent</p>
+              <h3>Apollo</h3>
+              <p class="product-meta">30ml from 359 DH</p>
+              <p class="product-text">Radiant, warm, and luminous — inspired by light and golden elegance.</p>
+              <a class="btn btn-small" href="shop.html#apollo">Buy Now</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-1">
+            <!-- PUT ARTEMIS PHOTO HERE -->
+            <img src="images/artemis.jpg" alt="Artemis perfume image" />
+            <div class="product-body">
+              <p class="product-tag">Pantheon Of Scent</p>
+              <h3>Artemis</h3>
+              <p class="product-meta">30ml from 359 DH</p>
+              <p class="product-text">Fresh, graceful, and mysterious with a moonlit signature.</p>
+              <a class="btn btn-small" href="shop.html#artemis">Buy Now</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2">
+            <!-- PUT APHRODITE PHOTO HERE -->
+            <img src="images/aphrodite.jpg" alt="Aphrodite perfume image" />
+            <div class="product-body">
+              <p class="product-tag">Pantheon Of Scent</p>
+              <h3>Aphrodite</h3>
+              <p class="product-meta">30ml from 359 DH</p>
+              <p class="product-text">Sensual, elegant, and soft — inspired by beauty and attraction.</p>
+              <a class="btn btn-small" href="shop.html#aphrodite">Buy Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="container split-grid simple-split">
+        <div class="split-copy reveal">
+          <p class="eyebrow">The Concept</p>
+          <h2>Fragrance as legend, identity, and atmosphere.</h2>
+          <p>
+            SylphSong transforms myth into scent through elegant compositions inspired by gods, goddesses,
+            and timeless symbolism. Each fragrance is made to feel refined, memorable, and expressive.
+          </p>
+          <a href="about.html" class="btn btn-dark">Read More</a>
+        </div>
+        <div class="split-copy reveal delay-1">
+          <p class="eyebrow">The Collection</p>
+          <h2>Five divine signatures. One mythic universe.</h2>
+          <p>
+            Apollo, Artemis, Dionysus, Athena, and Aphrodite come together in one collection:
+            <strong>Pantheon Of Scent</strong>. Choose from 30ml, 50ml, or 100ml with promo pricing and bundle offers.
+          </p>
+          <a href="shop.html" class="btn btn-outline">Explore Collection</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>SylphSong</h3>
+        <p>Where myth becomes scent.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">WhatsApp</a>
+        <a href="legal.html">Delivery Policy</a>
+        <a href="legal.html">Terms & Conditions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 SylphSong. All rights reserved.</div>
+  </footer>
+
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cartClose" class="cart-close">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+      <p><strong>Total:</strong> <span id="cartTotal">0</span> DH</p>
+      <p class="promo-note">Promo bundles apply automatically for quantities of 2 on the same bottle size.</p>
+      <button class="btn btn-dark">Checkout</button>
+    </div>
+  </aside>
+
+  <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chatbot">✦</button>
+  <aside class="chatbot-panel" id="chatbotPanel" aria-hidden="true">
+    <div class="chatbot-header">
+      <div>
+        <strong>SylphSong Assistant</strong>
+        <p>Ask about perfumes, pricing, delivery, or support.</p>
+      </div>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Close chatbot">×</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot">Hello, welcome to SylphSong. How can I help you today?</div>
+      <div class="quick-actions">
+        <button data-prompt="Help me choose a fragrance.">Choose a perfume</button>
+        <button data-prompt="What are your promo prices?">Promo prices</button>
+        <button data-prompt="I want delivery information.">Delivery info</button>
+      </div>
+    </div>
+    <form class="chatbot-form" id="chatbotForm">
+      <input type="text" id="chatbotInput" placeholder="Type your message..." />
+      <button type="submit">Send</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
